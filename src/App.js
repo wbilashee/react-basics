@@ -1,6 +1,9 @@
+import './App.css';
+import Header from './components/Header';
+
 function App() {
   return (
-    <h1>React Basics</h1>
+    <Header />
   );
 }
 
