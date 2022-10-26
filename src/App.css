@@ -4,6 +4,8 @@
   --black: #0f0f0f;
   --light-gray: #f1f5f8;
   --dark-gray: #102a42;
+  --radius: 5px;
+  --transition: 0.3s all ease-in-out;
 }
 
 html {
@@ -26,10 +28,38 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.header {
-  height: 5rem;
+.container {
   display: grid;
   place-items: center;
+  gap: 1.5rem;
+  padding: 3rem 0;
+}
+
+.btn {
+  outline: 0;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  letter-spacing: 0.05rem;
+  background: var(--black);
+  text-transform: capitalize;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.header {
+  padding: 0;
+  height: 5rem;
   background: white;
   color: var(--dark-gray);
+}
+
+.color-div {
+  width: 400px;
+  height: 200px;
+  border-radius: var(--radius);
 }
