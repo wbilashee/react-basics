@@ -13,9 +13,9 @@ function App() {
       <Header />
       <Color />
       <Counter />
-      <Flowers />
       <Form />
       <Todos />
+      <Flowers />
     </ThemeProvider>
   );
 }

@@ -123,6 +123,7 @@ body.dark .btn {
 
 .flower-div {
   text-align: center;
+  color: var(--black);
   background: white;
   border-radius: var(--radius);
 }
