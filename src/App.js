@@ -4,6 +4,7 @@ import Counter from './components/Counter';
 import Flowers from './components/Flowers';
 import Form from './components/Form';
 import Header from './components/Header';
+import Todos from './components/Todos';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Counter />
       <Flowers />
       <Form />
+      <Todos />
     </>
   );
 }
