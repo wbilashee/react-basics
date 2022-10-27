@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 :root {
-  --black: #0f0f0f;
+  --black: #111111;
   --light-gray: #f1f5f8;
   --dark-gray: #102a42;
   --radius: 5px;
@@ -24,8 +24,19 @@ html {
 body {
   color: var(--dark-gray);
   letter-spacing: 0.05rem;
+  transition: var(--transition);
   background: var(--light-gray);
   font-family: "Poppins", sans-serif;
+}
+
+body.dark {
+  color: white;
+  background: var(--black);
+}
+
+body.dark .btn {
+  color: var(--black);
+  background: white;
 }
 
 .container {
@@ -68,9 +79,22 @@ body {
   height: 5rem;
   background: white;
   color: var(--dark-gray);
+  transition: var(--transition);
 }
 
-.header h2 {
+.header.dark {
+  color: white;
+  background: #1e1e1e;
+}
+
+.header-content {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content h2 {
   font-size: 1.5rem;
 }
 
