@@ -1,19 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import useFetch from "./useFetch";
 import User from "./User";
+const url = "https://api.github.com/users";
 
 export default function Users() {
-    const [users, setUsers] = useState([]);
-    const url = "https://api.github.com/users";
-
-    const fetchUsers = async () => {
-        const response = await fetch(url);
-        const data = await response.json();
-        setUsers(data);
-    }
-
-    useEffect(() => {
-        fetchUsers();
-    }, [url]);
+    const users = useFetch(url);
 
     return (
         <section className='container'>
