@@ -23,7 +23,7 @@ export default function Flowers() {
     return (
         <section className='container'>
             <h2>Flowers</h2>
-            <div className='flowers'>
+            <div className='items'>
                 {flowers && flowers.map(item => {
                     return <Flower key={item.id} flower={item} />
                 })}

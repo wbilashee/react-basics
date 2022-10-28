@@ -144,7 +144,7 @@ input {
   }
 }
 
-.flowers {
+.items {
   width: 80vw;
   display: grid;
   margin: 1rem auto;
@@ -152,7 +152,7 @@ input {
   gap: 3rem;
 }
 
-.flower-div {
+.item-div {
   text-align: center;
   color: $black;
   background: white;
@@ -172,5 +172,19 @@ input {
       border-top-left-radius: $radius;
       border-top-right-radius: $radius;
     }
+  }
+}
+
+.users .img-div {
+  position: relative;
+
+  .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $black;
+    border-radius: 0;
+    background: white;
+    border-top-right-radius: 4px;
   }
 }

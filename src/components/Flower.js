@@ -4,7 +4,7 @@ export default function Flower({ flower }) {
     const { name, imgUrl } = flower;
 
     return (
-        <div className='flower-div'>
+        <div className='item-div'>
             <div className='img-div'>
                 <img src={imgUrl} alt={name} />
             </div>
