@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Color from './components/Color';
 import Counter from './components/Counter';
 import Flowers from './components/Flowers';
