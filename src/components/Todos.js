@@ -1,4 +1,6 @@
 import React, { useReducer, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const actions = {
     ADD_TODO: "ADD_TODO",
@@ -60,7 +62,9 @@ export default function Todos() {
                         <button
                             className="btn"
                             onClick={() => removeTodo(id)}
-                        >X</button>
+                        >
+                            <FontAwesomeIcon icon={faTimes} />
+                        </button>
                     </div>
                 })}
             </div>

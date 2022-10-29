@@ -1,5 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function User({ user }) {
     const { id, login, avatar_url } = user;
@@ -15,7 +17,9 @@ export default function User({ user }) {
                 <button
                     onClick={() => removeUser(id)}
                     className="btn"
-                >X</button>
+                >
+                    <FontAwesomeIcon icon={faTimes} />
+                </button>
                 <img src={avatar_url} alt={login} />
             </div>
             <h4>{login}</h4>
