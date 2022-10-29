@@ -3,7 +3,6 @@
 $radius: 5px;
 $black: #111111;
 $light-gray: #f1f5f8;
-$dark-gray: #102a42;
 $transition: 0.3s all ease-in-out;
 
 html {
@@ -20,7 +19,7 @@ html {
 }
 
 body {
-  color: $dark-gray;
+  color: $black;
   letter-spacing: 0.05rem;
   transition: $transition;
   background: $light-gray;
@@ -66,16 +65,12 @@ body {
   text-transform: capitalize;
   border-radius: $radius;
   transition: $transition;
-
-  &:hover {
-    background: $dark-gray;
-  }
 }
 
 .header {
   padding: 0;
   height: 5rem;
-  color: $dark-gray;
+  color: $black;
   background: white;
   transition: $transition;
 
@@ -91,7 +86,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  &.h2 {
+  h2 {
     font-size: 1.5rem;
   }
 }
@@ -191,4 +186,24 @@ input {
 
 .flowers {
   margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  input {
+    width: 75vw;
+  }
+
+  .items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .color-div {
+    width: 80vw;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
 }

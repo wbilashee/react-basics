@@ -53,7 +53,11 @@ export default function Todos() {
                     onChange={(e) => setTitle(e.target.value)}
                 />
             </form>
-            <button className="btn" type="submit">Add todo</button>
+            <button
+                type="submit"
+                className="btn"
+                onClick={handleSubmit}
+            >Add todo</button>
             <div className="todos">
                 {state && state.map(item => {
                     const { id, todo } = item;
